@@ -6,7 +6,7 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const handleGetStartedClick = () => {
-    navigate('/login');  // Navigate to the login page
+    navigate('/login');
   };
 
   return (
@@ -14,8 +14,7 @@ const LandingPage = () => {
       <section className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Welcome</h1>
-          <p className="hero-description">
-          </p>
+          <p className="hero-description">This is your landing page. Click below to log in.</p>
           <button className="cta-button" onClick={handleGetStartedClick}>
             Get Started
           </button>

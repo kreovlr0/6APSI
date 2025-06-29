@@ -1,14 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Changed Switch to Routes, and import adjusted
-import LandingPage from './LandingPage'; // Direct import from src
-import LoginPage from './LoginPage'; // Direct import from src
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import LandingPage from './LandingPage';
+import LoginPage from './LoginPage'; // Fixed component name
+import './App.css';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<LoginPage />} /> {/* Use element prop for React Router v6 */}
-        <Route path="/" element={<LandingPage />} /> {/* Use element prop for React Router v6 */}
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </Router>
   );
